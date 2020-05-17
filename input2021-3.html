@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>時間外工数入力1</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div id="title">
+                <h1>時間外工数入力</h1>
+            </div>
+<script type="text/javascript">
+// ①Web Storageの稼働確認
+if (typeof localStorage === 'undefined') {
+		window.alert("!!Error!! クエリが破損しています。開発者に連絡ください。");
+}else{
+		window.alert("日付と時間外工数時間を入力してください。入力が終わりましたら保存ボタンを押してください。");}
+
+	// ③localStorageへの格納
+function kkk(){
+    var key = document.getElementById("textdates").value;
+    var obj = new Array(
+      //document.getElementById("textkey").value,
+      document.getElementById("texthour").value,
+      document.getElementById("textminute").value,
+    );
+    var str1 = obj.toString();
+    // 値の入力チェック
+    if (key && obj) {
+      localStorage.setItem(key,str1);
+    }
+    alert("入力内容を保存しました。");
+}
+</script>
+<script>
+
+function ccc(){
+  let jc1 =0; let jk1 =0;
+  var str2 = localStorage.getItem("2021-03-21"); let date21 =document.getElementById("date21");
+  if(str2 == null){date21.innerHTML ="0時間0分";}else{var arr =new Array(); arr = str2.split(",");
+  date21.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc1 =arr[0]; jk1 =arr[1];}
+
+  let jc2 =0; let jk2 =0;
+  var str2 = localStorage.getItem("2021-03-22"); let date22 =document.getElementById("date22");
+  if(str2 == null){date22.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date22.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc2 =arr[0]; jk2 =arr[1];}
+
+  let jc3 =0; let jk3 =0;
+  var str2 = localStorage.getItem("2021-03-23"); let date23 =document.getElementById("date23");
+  if(str2 == null){date23.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date23.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc3 =arr[0]; jk3 =arr[1];}
+
+  let jc4 =0; let jk4 =0;
+  var str2 = localStorage.getItem("2021-03-24"); let date24 =document.getElementById("date24");
+  if(str2 == null){date24.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date24.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc4 =arr[0]; jk4 =arr[1];}
+
+  let jc5 =0; let jk5 =0;
+  var str2 = localStorage.getItem("2021-03-25"); let date25 =document.getElementById("date25");
+  if(str2 == null){date25.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date25.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc5 =arr[0]; jk5 =arr[1];}
+
+  let jc6 =0; let jk6 =0;
+  var str2 = localStorage.getItem("2021-03-26"); let date26 =document.getElementById("date26");
+  if(str2 == null){date26.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date26.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc6 =arr[0]; jk6 =arr[1];}
+
+  let jc7 =0; let jk7 =0;
+  var str2 = localStorage.getItem("2021-03-27"); let date27 =document.getElementById("date27");
+  if(str2 == null){date27.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date27.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc7 =arr[0]; jk7 =arr[1];}
+
+  let jc8 =0; let jk8 =0;
+  var str2 = localStorage.getItem("2021-03-28"); let date28 =document.getElementById("date28");
+  if(str2 == null){date28.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date28.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc8 =arr[0]; jk8 =arr[1];}
+
+  let jc9 =0; let jk9 =0;
+  var str2 = localStorage.getItem("2021-03-29"); let date29 =document.getElementById("date29");
+  if(str2 == null){date29.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date29.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc9 =arr[0]; jk9 =arr[1];}
+
+  let jc10 =0; let jk10 =0;
+  var str2 = localStorage.getItem("2021-03-30"); let date30 =document.getElementById("date30");
+  if(str2 == null){date30.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date30.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc10 =arr[0]; jk10 =arr[1];}
+
+  let jc11 =0; let jk11 =0;
+  var str2 = localStorage.getItem("2021-03-31"); let date31 =document.getElementById("date31");
+  if(str2 == null){date31.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date31.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc11 =arr[0]; jk11 =arr[1];}
+
+  let jc12 =0; let jk12 =0;
+  var str2 = localStorage.getItem("2021-04-01"); let date01 =document.getElementById("date01");
+  if(str2 == null){date01.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date01.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc12 =arr[0]; jk12 =arr[1];}
+
+  let jc13 =0; let jk13 =0;
+  var str2 = localStorage.getItem("2021-04-02"); let date02 =document.getElementById("date02");
+  if(str2 == null){date02.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date02.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc13 =arr[0]; jk13 =arr[1];}
+
+  let jc14 =0; let jk14 =0;
+  var str2 = localStorage.getItem("2021-04-03"); let date03 =document.getElementById("date03");
+  if(str2 == null){date03.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date03.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc14 =arr[0]; jk14 =arr[1];}
+
+  let jc15 =0; let jk15 =0;
+  var str2 = localStorage.getItem("2021-04-04"); let date04 =document.getElementById("date04");
+  if(str2 == null){date04.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date04.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc15 =arr[0]; jk15 =arr[1];}
+
+  let jc16 =0; let jk16 =0;
+  var str2 = localStorage.getItem("2021-04-05"); let date05 =document.getElementById("date05");
+  if(str2 == null){date05.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date05.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc16 =arr[0]; jk16 =arr[1];}
+
+  let jc17 =0; let jk17 =0;
+  var str2 = localStorage.getItem("2021-04-06"); let date06 =document.getElementById("date06");
+  if(str2 == null){date06.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date06.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc17 =arr[0]; jk17 =arr[1];}
+
+  let jc18 =0; let jk18 =0;
+  var str2 = localStorage.getItem("2021-04-07"); let date07 =document.getElementById("date07");
+  if(str2 == null){date07.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date07.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc18 =arr[0]; jk18 =arr[1];}
+
+  let jc19 =0; let jk19 =0;
+  var str2 = localStorage.getItem("2021-04-08"); let date08 =document.getElementById("date08");
+  if(str2 == null){date08.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date08.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc19 =arr[0]; jk19 =arr[1];}
+
+  let jc20 =0; let jk20 =0;
+  var str2 = localStorage.getItem("2021-04-09"); let date09 =document.getElementById("date09");
+  if(str2 == null){date09.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date09.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc20 =arr[0]; jk20 =arr[1];}
+
+  let jc21 =0; let jk21 =0;
+  var str2 = localStorage.getItem("2021-04-10"); let date10 =document.getElementById("date10");
+  if(str2 == null){date10.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date10.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc21 =arr[0]; jk21 =arr[1];}
+
+  let jc22 =0; let jk22 =0;
+  var str2 = localStorage.getItem("2021-04-11"); let date11 =document.getElementById("date11");
+  if(str2 == null){date11.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date11.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc22 =arr[0]; jk22 =arr[1];}
+
+  let jc23 =0; let jk23 =0;
+  var str2 = localStorage.getItem("2021-04-12"); let date12 =document.getElementById("date12");
+  if(str2 == null){date12.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date12.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc23 =arr[0]; jk23 =arr[1];}
+
+  let jc24 =0; let jk24 =0;
+  var str2 = localStorage.getItem("2021-04-13"); let date13 =document.getElementById("date13");
+  if(str2 == null){date13.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date13.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc24 =arr[0]; jk24 =arr[1];}
+
+  let jc25 =0; let jk25 =0;
+  var str2 = localStorage.getItem("2021-04-14"); let date14 =document.getElementById("date14");
+  if(str2 == null){date14.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date14.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc25 =arr[0]; jk25 =arr[1];}
+
+  let jc26 =0; let jk26 =0;
+  var str2 = localStorage.getItem("2021-04-15"); let date15 =document.getElementById("date15");
+  if(str2 == null){date15.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date15.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc26 =arr[0]; jk26 =arr[1];}
+
+  let jc27 =0; let jk27 =0;
+  var str2 = localStorage.getItem("2021-04-16"); let date16 =document.getElementById("date16");
+  if(str2 == null){date16.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date16.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc27 =arr[0]; jk27 =arr[1];}
+
+  let jc28 =0; let jk28 =0;
+  var str2 = localStorage.getItem("2021-04-17"); let date17 =document.getElementById("date17");
+  if(str2 == null){date17.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date17.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc28 =arr[0]; jk28 =arr[1];}
+
+  let jc29 =0; let jk29 =0;
+  var str2 = localStorage.getItem("2021-04-18"); let date18 =document.getElementById("date18");
+  if(str2 == null){date18.innerHTML ="0時間0分"}else{var arr =new Array(); arr = str2.split(",");
+  date18.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc29 =arr[0]; jk29 =arr[1];}
+
+  let jc30 =0; let jk30 =0;
+  var str2 = localStorage.getItem("2021-04-19"); let date19 =document.getElementById("date19");
+  if(str2 == null){date19.innerHTML ="0時間0分";}else{var arr =new Array();arr = str2.split(",");
+  date19.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc30 =arr[0]; jk30 =arr[1];};
+
+  let jc31 =0; let jk31 =0;
+  var str2 = localStorage.getItem("2021-04-20"); let date20 =document.getElementById("date20");
+  if(str2 == null){date20.innerHTML ="0時間0分";}else{var arr =new Array();arr = str2.split(",");
+  date20.innerHTML =arr[0]+"時間" +arr[1]+"分"; jc31 =arr[0]; jk31 =arr[1];};
+  let jd =eval(jc1)+eval(jc2)+eval(jc3)+eval(jc4)+eval(jc5)+eval(jc6)+eval(jc7)+eval(jc8)+//jdはhour値だけの合計
+  eval(jc9)+
+  eval(jc10)+
+  eval(jc11)+
+  eval(jc12)+eval(jc13)+eval(jc14)+eval(jc15)+eval(jc16)+eval(jc17)+eval(jc18)+eval(jc19)+eval(jc20)+
+  eval(jc21)+eval(jc22)+eval(jc23)+eval(jc24)+eval(jc25)+eval(jc26)+eval(jc27)+eval(jc28)+eval(jc29)+eval(jc30)+eval(jc31);
+  jd = jd*60;
+
+  let js =eval(jk1)+eval(jk2)+eval(jk3)+eval(jk4)+eval(jk5)+eval(jk6)+eval(jk7)+eval(jk8)+//jsはminutes値だけの合計
+  eval(jk9)+
+  eval(jk10)+
+  eval(jk11)+
+  eval(jk12)+eval(jk13)+eval(jk14)+eval(jk15)+eval(jk16)+eval(jk17)+eval(jk18)+eval(jk19)+eval(jk20)+
+  eval(jk21)+eval(jk22)+eval(jk23)+eval(jk24)+eval(jk25)+eval(jk26)+eval(jk27)+eval(jk28)+eval(jk29)+eval(jk30)+eval(jk31);
+  jD =eval(jd)+eval(js);//時間を分に変更した値に元々の分値を合算した値
+  let jD45 =2700-eval(jD);
+  let lastHour45 = Math.floor(jD45/60);//45時間残業の残り時間
+  let lastMinute45 =jD45%60;//45時間残業の残り分
+
+  let jD60 =3600-eval(jD);
+  let lastHour60 = Math.floor(jD60/60);//60時間残業の残り時間
+  let lastMinute60 =jD60%60;//60時間残業の残り分
+
+  let lastHour = Math.floor(jD/60);//トータル残業時間
+  let lastMinute =jD%60;//トータル残業分
+
+  let total =document.getElementById("total");
+  total.innerHTML =lastHour +"時間" +lastMinute +"分";
+  let total45 =document.getElementById("total45");
+  total45.innerHTML =lastHour45 +"時間" +lastMinute45 +"分";
+  let total60 =document.getElementById("total60");
+  total60.innerHTML =lastHour60 +"時間" +lastMinute60 +"分";
+  if(lastHour45 < 10){
+    document.getElementById("colo1").style="background-color: yellow";
+  };
+  if(lastHour45 <= 0 && lastMinute45 < 1){
+    document.getElementById("colo1").style="background-color: red";
+  };
+  if(lastHour60 < 10){
+    document.getElementById("colo2").style="background-color: yellow";
+  };
+  if(lastHour60 <= 0 && lastMinute60 < 1){
+    document.getElementById("colo2").style="background-color: red";
+  };
+
+};
+
+</script>
+
+
+
+        </header>
+        <section id="main">
+          <ul>
+             <li>日付:<input id ="textdates" type="date" size="4" ,maxlength="10" /></li>
+             <li>時間:<input id ="texthour" type="text" size="1" ,maxlength="2" />(半角数字で必ず0以上の値を入力)</li>
+             <li>　分:<input id ="textminute" type="text" size="1" ,maxlength="2" />(半角数字で必ず0以上の値を入力)</li>
+          </ul>
+			<button id="button" onclick="kkk();">上記の入力を保存</button> <button id="button" onclick="ccc();">下記の累計グラフの更新と表示</button> <button id="button" onclick="window.print();">印刷</button> <button id="button" onclick="window.close();">終了</button>
+<!--			<button id="button" onclick="removeStorage()">削除</button>
+			<button id="button" onclick="removeallStorage()">全て削除</button> -->
+
+      <ol id="lists">
+
+      </ol>
+		<table border="3">
+			<tr>
+				<th style="background-color:#FF5192">03/21</th><td id="date21" style="background-color:#FF5192">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/01</th><td id="date01" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#FF5192">04/11</th><td id="date11" style="background-color:#FF5192">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/22</th><td id="date22" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/02</th><td id="date02" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/12</th><td id="date12" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/23</th><td id="date23" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/03</th><td id="date03" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/13</th><td id="date13" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/24</th><td id="date24" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#FF5192">04/04</th><td id="date04" style="background-color:#FF5192">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/14</th><td id="date14" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/25</th><td id="date25" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/05</th><td id="date05" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/15</th><td id="date15" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/26</th><td id="date26" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/06</th><td id="date06" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/16</th><td id="date16" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#32EEFF">03/27</th><td id="date27" style="background-color:#32EEFF">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/07</th><td id="date07" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#32EEFF">04/17</th><td id="date17" style="background-color:#32EEFF">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#FF5192">03/28</th><td id="date28" style="background-color:#FF5192">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/08</th><td id="date08" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#FF5192">04/18</th><td id="date18" style="background-color:#FF5192">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/29</th><td id="date29" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/09</th><td id="date09" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/19</th><td id="date19" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/30</th><td id="date30" style="background-color:#dddddd">----------</td><td>.</td>
+        <th style="background-color:#32EEFF">04/10</th><td id="date10" style="background-color:#32EEFF">----------</td><td>.</td>
+        <th style="background-color:#dddddd">04/20</th><td id="date20" style="background-color:#dddddd">----------</td>
+			</tr>
+      <tr>
+				<th style="background-color:#dddddd">03/31</th><td id="date31" style="background-color:#dddddd">----------</td><td>.</td>
+			</tr>
+
+		</table>
+        </section>
+<br>
+<a><span style="text-decoration: underline">2021年3月21日～4月20日までの合計時間外＝</span></a><a id="total" style="background: linear-gradient(transparent 0, #8effa1 0)"> 0時間0分</a><br><a>.</a>
+
+<table border="1" class="flex-list">
+<tr>
+  <th style="background-color:#F5F5F5">～45時間まで残り</th>
+  <th id="colo1" style="background-color:#8effa1"><a id="total45">0時間0分</a></th>
+</tr>
+</table>
+<table border="1" class="flex-list">
+<tr>
+  <th style="background-color:#F5F5F5">～60時間まで残り</th>
+  <th id="colo2" style="background-color:#8effa1"><a id="total60">0時間0分</a></th>
+</tr>
+</table>
+<h5>※各残り時間が10時間を切ると<span class="goo">黄色信号</span>が出ます。<br>※各残り時間が0時間(オーバー)すると<span class="hoo">赤色信号</span>になります。<br>※オーバーした後は何時間何分オーバーしたのかをマイナス表記します。</h5>
+
+
+<style>
+  .flex-list{display:flex; padding: 8px; padding-left: 80px; width:420px;}
+  .goo{background-color:yellow;}
+  .hoo{background-color:red;}
+</style>
+        <footer>
+        </footer>
+    </div>
+</body>
+</html>
